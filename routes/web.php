@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\StudentController@index')->name('home');
-Route::get('/create', 'App\Http\Controllers\StudentController@create')->name('create');
+Route::get('/', 'App\Http\Controllers\StudentController@create')->name('home');
+Route::get('/create', 'App\Http\Controllers\StudentController@index')->name('create');
 
 Route::get('/hello', function () {
     return "Hello Veera";
